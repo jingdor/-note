@@ -1,2 +1,5 @@
-# -note
-study  note
+### 一些笔记
+- liunx 系统调用
+
+
+
