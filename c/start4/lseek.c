@@ -41,6 +41,7 @@ int main(){
 //
 //
 // dup dup2 系统调用以后再说
-//
+// dup(int fildes);
+// dup2(int fildes,int filds2);
 	
 }
