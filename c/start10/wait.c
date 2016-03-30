@@ -41,6 +41,15 @@ int main(){
 		int stat_val;
 		pid_t  child_pid;
 		child_pid=wait(&stat_val);
+		
+
+//WAIT宏
+//WIFEXITED 正常结束非0
+//WEXITSTSTUS  WIFEXITED 正常退出码
+//WIFSIGNALED 未捕捉信号关闭
+//WTERMSIG 	WIFSIGNALED 非0 信号代码
+//WIFSTOPPED	 意外终止 取非0
+//WSTOPSIGN 	WIFSTOPPED 非0 返回信号代码
 		if(WIFEXITED(stat_val))
 			printf("child id %d",WEXITSTATUS(stat_val));
 		else{
